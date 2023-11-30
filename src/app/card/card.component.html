@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <ng-container *ngFor="let country of countrys">
+      <div class="col-4 mb-3">
+        <div class="card">
+          <img src="{{ country.image }}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h2 class="card-title">{{ country.name }}</h2>
+            <p class="card-text">
+              {{ country.content }}
+            </p>
+            <a href="#" class="btn btn-primary">Clique</a>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
