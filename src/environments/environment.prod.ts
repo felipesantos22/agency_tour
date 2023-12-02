@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    apiUrl: 'https://agency-tour-7052cbd157b8.herokuapp.com/',
+    apiUrl: 'https://agency-tour-backend-a10abe72bb88.herokuapp.com/api',
   };
   

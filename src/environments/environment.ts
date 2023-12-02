@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:4200/',
+  apiUrl: 'https://agency-tour-backend-a10abe72bb88.herokuapp.com/api',
 };
