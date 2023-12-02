@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Country } from '../models/Country';
 import { PackagesService } from '../services/packages.service';
 
@@ -7,16 +7,16 @@ import { PackagesService } from '../services/packages.service';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css'],
 })
-export class CardComponent {
+export class CardComponent implements OnInit {
   countrys: Country[] = [];
 
   constructor(private service: PackagesService) {}
 
-  index(): void {
-    this.service.index().subscribe((data) => (this.countrys = data));
+  ngOnInit(): void {
+    this.index();
   }
 
-  ngOnInit() {
-    this.index();
+  index(): void {
+    this.service.index().subscribe((data) => (this.countrys = data));
   }
 }
