@@ -3,6 +3,8 @@ const path = require("path");
 
 const app = express();
 
+app.use(express.json());
+
 // Serve os arquivos estáticos da pasta dist (gerada pelo ng build)
 app.use(express.static(__dirname + "/dist/agency-tour"));
 
