@@ -59,4 +59,4 @@ jobs:
           app-name: 'agency-tour'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_ECC3E3F432F74FE6B8771D0028B4FE19 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CBEEF1E5164440EEA66D768841DC0152 }}
