@@ -6,8 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "heroku-posbuild":"ng build --prod"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
     "path": "^0.12.7",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
