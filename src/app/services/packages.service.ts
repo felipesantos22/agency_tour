@@ -7,7 +7,7 @@ import { Country } from '../models/Country';
   providedIn: 'root',
 })
 export class PackagesService {
-  private url: string = "api";
+  private url: string = "/api";  // alterado para a raiz
 
   constructor(private http: HttpClient) {}
 
