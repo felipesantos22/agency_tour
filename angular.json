@@ -68,11 +68,11 @@
           "configurations": {
             "production": {
               "browserTarget": "agency-tour:build:production",
-              "proxyConfig": "./proxy.config.json"
+              "proxyConfig": "./proxy.config.js"
             },
             "development": {
               "browserTarget": "agency-tour:build:development",
-              "proxyConfig": "./proxy.config.json"
+              "proxyConfig": "./proxy.config.js"
 
             }
           },
