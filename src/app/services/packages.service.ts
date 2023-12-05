@@ -7,11 +7,11 @@ import { Country } from '../models/Country';
   providedIn: 'root',
 })
 export class PackagesService {
-  private url: string = "/api";  // alterado para a raiz
+  private url: string = '/api'; // alterado para a raiz
 
   constructor(private http: HttpClient) {}
 
   index(): Observable<Country[]> {
-    return this.http.get<Country[]>(this.url);
+    return this.http.get<Country[]>(this.url, { responseType: 'json' });
   }
 }
