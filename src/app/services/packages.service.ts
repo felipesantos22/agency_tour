@@ -14,4 +14,8 @@ export class PackagesService {
   index(): Observable<Country[]> {
     return this.http.get<Country[]>(this.url);
   }
+
+  // index() {
+  //   return this.http.get('/api');
+  // }
 }
