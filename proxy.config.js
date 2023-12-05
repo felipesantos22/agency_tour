@@ -1,6 +1,6 @@
 const proxy = [
   {
-    context: ["/api"],
+    context: ["/"],
     target: "https://agency-tour-backend-a10abe72bb88.herokuapp.com",
     changeOrigin: true,
     pathRewrite: { "^/": "" },
